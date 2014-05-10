@@ -15,8 +15,6 @@ plot3<-function(){
   #extract dates
   days<-strptime(paste(sorted.data$Date, sorted.data$Time), format="%d/%m/%Y %H:%M:%S")
   
-  png(filename = "plot3.png", width = 480, height = 480)
-
   #plot
   png(filename = "plot3.png", width = 480, height = 480)   
   plot(days, submet1, type="l", xlab="", ylab="Energy sub metering")
